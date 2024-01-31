@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="1000.0" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.solt.jdc.controller.RegistrationListViewController">
+   <children>
+      <HBox spacing="20.0">
+         <children>
+            <TextField fx:id="schStuName" promptText="Search By Student" />
+            <TextField fx:id="schClassName" promptText="Search By Class" />
+         </children>
+      </HBox>
+      <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="colStuName" prefWidth="184.00001525878906" text="Student Name" />
+            <TableColumn fx:id="colClassName" prefWidth="191.0" text="Class Name" />
+            <TableColumn fx:id="colFees" prefWidth="94.0" text="Fees" />
+            <TableColumn fx:id="colPaid" prefWidth="91.0" text="Paid" />
+            <TableColumn fx:id="colRemain" prefWidth="90.0" text="Remain" />
+            <TableColumn fx:id="colStartDate" prefWidth="94.0" text="Start Date" />
+            <TableColumn fx:id="colMember" prefWidth="138.0" text="Member" />
+        </columns>
+      </TableView>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" />
+   </padding>
+</VBox>

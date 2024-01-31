@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="1000.0" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.solt.jdc.controller.ClassListViewController">
+   <children>
+      <HBox>
+         <children>
+            <TextField fx:id="schName" promptText="Search By Class Name" />
+         </children>
+      </HBox>
+      <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0" stylesheets="@../../../../../style.css" VBox.vgrow="ALWAYS">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="37.0" text="Id" />
+          <TableColumn fx:id="colClassName" prefWidth="146.0" text="Class Name" />
+            <TableColumn fx:id="colStartDate" prefWidth="84.0" text="Start Date" />
+            <TableColumn fx:id="colStartTime" prefWidth="76.0" text="Start Time " />
+            <TableColumn fx:id="colEndTime" prefWidth="69.0" text="End Time" />
+            <TableColumn fx:id="colDays" prefWidth="166.0" text="Days" />
+            <TableColumn fx:id="colDuration" prefWidth="82.0" text="Duration" />
+            <TableColumn fx:id="colFees" prefWidth="85.0" text="Fees" />
+            <TableColumn fx:id="colRemark" prefWidth="141.0" text="Remark" />
+            <TableColumn fx:id="colCourse" prefWidth="70.0" text="Course" />
+        </columns>
+      </TableView>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" />
+   </padding>
+</VBox>
